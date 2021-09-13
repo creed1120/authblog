@@ -15,6 +15,7 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
+            <h2 class="mb-3">Log into our blog admin area</h2>
             <!-- Email Address -->
             <div>
                 <x-label for="email" :value="__('Email')" />
