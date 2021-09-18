@@ -27,6 +27,10 @@
                 </div>
             </header>
 
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                @include('flash_messages')
+            </div>
+
             <!-- Page Content -->
             <main>
                 {{ $slot }}

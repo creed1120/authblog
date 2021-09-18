@@ -18,8 +18,20 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('create')" :active="request()->routeIs('create')">
+                    <x-nav-link :href="route('post.create')" :active="request()->routeIs('post.create')">
                         {{ __('Create Post') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('category.create')" :active="request()->routeIs('category.create')">
+                        {{ __('Create Category') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('categories')" :active="request()->routeIs('categories')">
+                        {{ __('Categories') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('posts')" :active="request()->routeIs('posts')">
+                        {{ __('View Posts') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('posts.trashed')" :active="request()->routeIs('posts.trashed')">
+                        {{ __('Trash') }}
                     </x-nav-link>
                 </div>
             </div>

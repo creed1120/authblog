@@ -137,8 +137,11 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'category_id' => [
+            'required' => 'The category field is required.',
+        ],
+        'name' => [
+            'required' => 'The category name field is required.',
         ],
     ],
 
